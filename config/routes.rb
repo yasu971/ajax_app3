@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   # HTTPメソッド 'URIパターン', to: 'コントローラー名#アクション名'
-  get 'posts', to: 'posts#index'
-  get 'posts/new', to: 'posts#new'
+  root to: 'posts#index' # ←編集
+# get 'posts/new', to: 'posts#new' ←削除
   post 'posts', to: 'posts#create'
 end
